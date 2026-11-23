@@ -1,0 +1,9 @@
+{
+  "name": "labzhurnal-personnel",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-22",
+  "compatibility_flags": ["nodejs_compat"],
+  "ai": { "binding": "AI" },
+  "durable_objects": { "bindings": [{ "name": "PERSONNEL", "class_name": "Personnel" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Personnel"] }]
+}
