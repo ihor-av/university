@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+skinparam dpi 150
+title Діаграма прецедентів системи «ЛабЖурнал»
+
+actor "Науковець" as N
+actor "Керівник\nлабораторії" as KL
+actor "Адміністратор\nсистеми" as ADM
+actor "Зовнішній\nAI-сервіс" as AI
+
+usecase "UC1. Створити гіпотезу\nта задачу дослідження" as UC1
+usecase "UC2. Створити протокол\nексперименту" as UC2
+usecase "UC3. Отримати чернетку\nпротоколу" as UC3
+usecase "UC4. Записати виконання\nексперименту" as UC4
+usecase "UC5. Зареєструвати\nрезультат експерименту" as UC5
+usecase "UC6. Скласти звіт\nза період" as UC6
+usecase "UC7. Перевірити звіт\nна спроможність" as UC7
+usecase "UC8. Отримати відповідь\nпо базі знань" as UC8
+usecase "UC9. Отримати огляд\nзаписів журналу" as UC9
+usecase "UC10. Керувати користувачами,\nшаблонами, копіями" as UC10
+
+N --> UC1
+N --> UC2
+N --> UC4
+N --> UC5
+N --> UC6
+N --> UC8
+KL --> UC6
+KL --> UC9
+ADM --> UC10
+
+UC2 ..> UC3 : <<include>>
+UC7 ..> UC6 : <<extend>>
+AI --> UC3
+AI --> UC7
+AI --> UC8
+AI --> UC9
+@enduml
