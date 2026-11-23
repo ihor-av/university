@@ -1,0 +1,16 @@
+# build artefacts and local state
+build/
+*.generated.typ
+node_modules/
+.wrangler/
+.venv/
+__pycache__/
+*.pyc
+
+# course materials and secrets never go into the public repo
+req/
+.env
+.env.*
+.dev.vars
+*.log
+.DS_Store
