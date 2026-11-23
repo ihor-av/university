@@ -15,7 +15,7 @@
 |---|---|---|
 | [`lab1`](https://github.com/ihor-av/university/tree/lab1) | Паспорт проєкту | паспорт на 21 пункт, діаграма оргструктури, графік реалізації |
 | [`lab2`](https://github.com/ihor-av/university/tree/lab2) | Use Case та User Story | актори, прецеденти, UML-діаграми, 10 User Story, RTM |
-| [`lab3`](https://github.com/ihor-av/university/tree/lab3) | Планування в Linear | план задач, пріоритети MoSCoW, віхи, скрипт роботи з Linear API |
+| [`lab3`](https://github.com/ihor-av/university/tree/lab3) | Планування в Linear | проєкт і дошка, план задач, пріоритети MoSCoW, віхи, перевірка через API |
 | [`lab4`](https://github.com/ihor-av/university/tree/lab4) | Ризики та комунікації | Risk Register, RACI, регламент комунікацій, Notion, ШІ-помічники |
 
 ### ШІ-помічники на Pi Durable
